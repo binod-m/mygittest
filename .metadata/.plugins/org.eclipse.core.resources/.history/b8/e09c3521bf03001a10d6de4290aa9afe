@@ -1,0 +1,33 @@
+
+	import ilog.concert.*;
+	import ilog.cplex.*;
+
+	public class CplexLPTest2 {
+
+		public static void solveMe() {
+			int n = 4; //cargos
+	        int m = 3; //compartments
+	        double[] p = {310.0, 380.0, 350.0, 285.0}; //profit
+	        double[] v = {480.0, 650.0, 580.0, 390.0}; //volume per ton of cargo
+	        double[] a = {18.0, 15.0, 23.0, 12.0}; //available weight
+	        double[] c = {10.0, 16.0, 8.0}; //capacity of compartment
+	        double[] V = {6800.0, 8700.0, 5300.0}; //volume capacity of airplane
+	        try {
+	       //define the model 	
+	       IloCplex cplex = new IloCplex();
+	       //create variables
+	       IloNumVar[][] x = new IloNumVar[n][];
+	       
+	       for(int i=0;i<n; i++) {
+	    	   x[i]=cplex.numVarArray(m, 0, Double.MAX_VALUE);
+	       }
+	       
+	       IloNumVar y = cplex.numVar(0, Double.MAX_VALUE);
+	       
+	        	
+	        }catch(IloException ex) {
+	        	ex.printStackTrace();
+	        }
+
+		}
+	}

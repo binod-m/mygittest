@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="ilog.concert.IloLinearIntExpr"/>
+<fullyQualifiedTypeName name="ilog.concert.IloLinearNumExpr"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="cplexLPTest"/>
+<fullyQualifiedTypeName name="ilog.cplex.IloCplex.IntParam"/>
+<fullyQualifiedTypeName name="seminar.Logger"/>
+</qualifiedTypeNameHistroy>

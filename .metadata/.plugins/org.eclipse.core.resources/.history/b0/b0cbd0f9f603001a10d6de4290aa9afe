@@ -1,0 +1,27 @@
+
+public class TSP {
+
+	public static void solveMe(int n) {
+		//random data points
+	double[] xPos = new double[n];
+	double[] yPos = new double[n];
+	
+	for(int i=0; i<n; i++) {
+		xPos[i]=Math.random()*100;
+		yPos[i]=Math.random()*100;
+	}
+	
+	double[][] c = new double[n][n];
+	for(int i=0; i<n;i++ ) {
+		for(int j=0; i<n;j++){
+			c[i][j]=Math.sqrt(Math.pow(xPos[i]-xPos[j], 2) + Math.pow(yPos[i]-yPos[j], 2));
+		}
+	}
+	
+	
+	
+	
+	}
+	
+	
+}
